@@ -1,0 +1,59 @@
+@font-face {
+	font-family: "Rubik";  
+	src: url("https://fonts.google.com/specimen/Rubik%20Beastly#standard-styles");
+	font-style: normal; 
+	font-weight: normal;
+	 }
+
+body {
+	background-color: bisque;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.game {
+	background-color: cadetblue;
+	min-height: 550px;
+	min-width: 550px;
+	margin-top: auto;
+	border: 5px solid black;
+	margin: 150px;
+	border-radius: 15px;
+	padding: 15px;
+}
+
+.name {
+	font-size: 40px;
+	font-family: 'Press Start 2P';
+	text-align: center;
+}
+
+.field {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	border: 5px solid black;
+	border-radius: 10px;
+	width: 440px;
+	height: 440px;
+	margin: auto;
+}
+
+.hole {
+	width: 95px;
+	height: 95px;
+	background-color: white;
+	margin: auto;
+	border-radius: 50px;
+	border: 2px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.goblin {
+	width: 80px;
+	height: 80px;
+}
