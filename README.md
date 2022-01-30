@@ -1,3 +1,4 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/36h56asf5apbhe04?svg=true)](https://ci.appveyor.com/project/Nikitashalimov/catch-the-goblin)
 
 Правила сдачи задания:
 
