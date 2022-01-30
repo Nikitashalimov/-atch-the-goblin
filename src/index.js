@@ -6,6 +6,7 @@ const goblin = `<img class="goblin" src="img/goblin.png"></img>`
 
 // массив с индексами
 let arrIndex = [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+// переменная для массива
 let index;
 
 function addGoblin() {
@@ -24,7 +25,7 @@ function addGoblin() {
 	let removeGoblin = document.querySelector('.goblin');
 	// массив с вариациями время на удаление 'гоблина'
 	const removeTime = [500, 750, 1000];
-	// удаляем 'гоблина'
+	// удаляем 'гоблина' с рандомным временем из предложенных
 	setTimeout(() => removeGoblin.remove(), removeTime[Math.floor(Math.random() * removeTime.length)]);
 }
 
