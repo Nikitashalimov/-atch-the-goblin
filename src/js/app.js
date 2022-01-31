@@ -10,7 +10,7 @@ let index;
 const firstNum = arrIndex[0];
 const secondNum = arrIndex[1];
 
-export default function addGoblin() {
+function addGoblin() {
   // перемешиваем массив
   arrIndex.sort(() => Math.random() - 0.5);
   // берем первое число из массива и записываем в переменную, если повторяется, берем следующее
@@ -29,7 +29,7 @@ export default function addGoblin() {
   setTimeout(() => remGoblin.remove(), remTime[Math.floor(Math.random() * remTime.length)]);
 }
 
-export default function start() {
+function start() {
   setInterval(() => addGoblin(), 1300);
 }
 start();
