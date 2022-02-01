@@ -1,23 +1,21 @@
 const holes = document.querySelectorAll('.hole');
 
 // присваиваем переменной html-код с картинкой
-const goblin = '<img class="goblin" src="img/goblin.png"></img>';
+const goblin = '<div class="goblin"></div>';
 
 // массив с индексами
 const arrIndex = [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 // переменная для массива
 let index;
-const firstNum = arrIndex[0];
-const secondNum = arrIndex[1];
 
 function addGoblin() {
   // перемешиваем массив
   arrIndex.sort(() => Math.random() - 0.5);
   // берем первое число из массива и записываем в переменную, если повторяется, берем следующее
-  if (index === firstNum) {
-    index = secondNum;
+  if (index === arrIndex[0]) {
+    index = arrIndex[1];
   } else {
-    index = firstNum;
+    index = arrIndex[0];
   }
   // вставляем гоблина в HTML
   holes[index].insertAdjacentHTML('beforeend', goblin);

@@ -56,4 +56,6 @@ body {
 .goblin {
 	width: 80px;
 	height: 80px;
+	background-image: url('../img/goblin.png');
+	background-size: cover;
 }
